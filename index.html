@@ -18,6 +18,11 @@
                 0
             </div>
 
+            <p class="win-banner">'X' wins this round!</p>
+            <div class="next-round">
+                <button>Next round</button>
+            </div>
+
             <p class="player-2">Player 2</p>
             <div class="player-2-score">
                 0
@@ -32,28 +37,29 @@
                 <p>Tic Tac Toe</p>
             </div>
 
-            <form action="#" class="form">
-                <p>Insert your name and hit "Submit".</p>
+            <form action="#" method="POST" class="form">
+                <p>Insert your names and hit "Play".</p>
                 <fieldset>
                     <label for="player-1" class="player-1-label">Player 1</label>
                     <input type="text" name="player-1" id="player-1" class="player-1-input">
 
                     <label for="player-2" class="player-2-label">Player 2</label>
                     <input type="text" name="player-2" id="player-2" class="player-2-input">
-
-                    <label class="computer-game-label">Set computer as player 2</label>
-                    <label class="switch computer-game-chk">
-                        <input type="checkbox" name="computer-play">
-                        <span class="slider round"></span>
-                    </label>
                 </fieldset>
 
-                <button type="submit">Submit</button>
+                <div class="play-btn">
+                    <button type="submit">Play</button>
+                </div>
+
+                <div class="control-btns">
+                    <button class="reset-btn">Reset</button>
+                    <button class="end-game">End Game</button>
+                </div>
             </form>
 
-            <div class="play-btn">
+            <!-- <div class="play-btn">
                 <button>Play</button>
-            </div>
+            </div> -->
         </aside>
         <footer class="footer">
             <p>Copyright &copy; Ovidiu Postoiu <br> 2024</p>
